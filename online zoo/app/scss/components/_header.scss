@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--color-bg-1);
+  box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+
+  &__hide {
+    display: block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    min-height: 94px;
+    padding: 26px 150px;
+
+  }
+
+  &__logo {
+    width: 59px;
+    position: relative;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+    width: 40px;
+    height: 21px;
+    margin-left: 34px;
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &__burger-row {
+    display: block;
+    /* margin: 0; */
+    width: 40px;
+    height: 3px;
+    background-color: $dark-main;
+  }
+
+  &__burger-row:last-child {
+    width: 33px;
+    margin-left: auto;
+  }
+}

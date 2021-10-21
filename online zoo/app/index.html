@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online zoo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+
+      <h1 class="header__hide">Online Zoo</h1>
+
+      <div class="header__wrapper container container--wide d-flex">
+
+        <a class="header__logo" href="#">
+          <img class="header__logo-svg" src="assets/icons/logo.svg" alt="logo">
+        </a>
+
+        <nav class="header__menu menu">
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#" autofocus>About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="pages/zoos/panda/panda.html">Zoos</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="pages/map/map.html">Map</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#nav">Contact Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                target="_blank">Design</a>
+            </li>
+          </ul>
+        </nav>
+
+        <label class="switch">
+          <input class="switch__input" type="checkbox" value="light">
+          <span class="switch__slider round"></span>
+        </label>
+
+        <button class="header__burger button" type="button">
+          <span class="header__burger-row"></span>
+          <span class="header__burger-row"></span>
+          <span class="header__burger-row"></span>
+        </button>
+
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <section class="hero">
+
+        <div class="hero__wrapper container container--wide">
+
+          <div class="hero__inner">
+
+            <div class="hero__box">
+              <div class="hero__title">Watch your favorite animal online</div>
+              <a class="hero__link button" href="pages/zoos/panda/panda.html"><span class="button__pic"></span>watch
+                online</a>
+            </div>
+
+            <nav class="hero__social social">
+              <ul class="social__list d-flex">
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com/" target="_blank">
+                    <img class="social__img" src="assets/icons/instagram.svg" alt="instagram">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://twitter.com/" target="_blank">
+                    <img class="social__img" src="assets/icons/twitter.svg" alt="twitter">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/" target="_blank">
+                    <img class="social__img" src="assets/icons/youtube.svg" alt="youtube">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--vk" href="https://vk.com/" target="_blank">
+                    <img class="social__img" src="assets/icons/vk.svg" alt="vk">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="hero__slider slider slider--hero">
+            <span class="circle circle--first"></span>
+            <span class="circle circle--second"></span>
+            <span class="circle circle--third"></span>
+            <span class="circle circle--fourth"></span>
+            <span class="line"></span>
+            <ul class="slider__list slider__list--hero d-flex">
+              <li class="slider__item slider__item--hero" data-index="0">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/eagle.png" alt="eagle">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero slider__item--active" data-index="1">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/panda.png" alt="panda">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero" data-index="2">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/gorilla.png" alt="gorilla">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero" data-index="3">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/crocodile.png"
+                  alt="crocodile">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero" data-index="4">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/fox.png" alt="fox">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero" data-index="5">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/sloth.png" alt="sloth">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero" data-index="6">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/elephant.png"
+                  alt="elephant">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch
+                    online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hero" data-index="7">
+                <img class="slider__animal slider__animal--hero" src="assets/images/animals/cat.png" alt="cat">
+                <div class="slider__mask slider__mask--hero d-flex">
+                  <p class="slider__text">Panda’s name is Bei Bei. He
+                    is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                  <a href="pages/zoos/panda/panda.html" class="slider__link"><span class="slider__link-pic"></span>watch online</a>
+                  <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="slider__range slider__range--hero range range--hero">
+              <div class="range__value range__value--hero">02/</div><span class="range__all range__all--hero">08</span>
+              <input class="range__slider range__slider--hero" type="range" min="0" max="7" value="1">
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section class="works">
+
+        <div class="container container--narrow">
+
+          <div class="works__inner d-flex">
+
+            <div class="works__title title">How it works?</div>
+            <p class="works__text text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+              bushfires on precious species and their
+              habitat, and we are determined to assist in all aspects, including providing veterinary support and
+              raising
+              much-needed
+              emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their
+              lives. Animals
+              have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and
+              deserve a life
+              of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+              bushfires on
+              precious species and their habitat.
+            </p>
+
+            <div class="works__slider slider">
+              <ul class="slider__list slider__list--works d-flex">
+                <li class="slider__item slider__item--works fade" data-index="1">
+                  <img class="slider__animal slider__animal--works" src="assets/images/animals-works/deer.png"
+                    alt="deer">
+                </li>
+                <li class="slider__item slider__item--works fade" data-index="2">
+                  <img class="slider__animal slider__animal--works" src="assets/images/animals-works/panda.png"
+                    alt="panda">
+                </li>
+                <li class="slider__item slider__item--works fade" data-index="3">
+                  <img class="slider__animal slider__animal--works" src="assets/images/animals-works/monkeys.png"
+                    alt="monkeys">
+                </li>
+                <li class="slider__item slider__item--works fade" data-index="4">
+                  <img class="slider__animal slider__animal--works" src="assets/images/animals-works/chimpanzee.png"
+                    alt="chimpanzee">
+                </li>
+              </ul>
+
+
+            </div>
+
+            <div class="slider__range slider__range--works range range--works">
+              <div class="range__value range__value--works">01/</div><span
+                class="range__all range__all--works">04</span>
+              <input class="range__slider range__slider--works" oninput="currentSlide(this.value)" type="range" min="0"
+                max="3" value="0">
+            </div>
+
+            <a class="works__link button" href="pages/zoos/panda/panda.html"><span class="button__pic"></span>watch
+              online</a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="inspires">
+
+        <div class="container">
+
+          <div class="inspires__inner d-flex">
+
+            <div class="inspires__box d-flex">
+              <span class="inspires__img"
+                style="background-image: url(assets/images/inspires/problem-solving.svg);"></span>
+              <div class="inspires__title">What inspires us?</div>
+              <p class="inspires__text text">
+                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious
+                species and their
+                habitat, and we are determined to assist in all aspects.
+              </p>
+            </div>
+            <div class="inspires__box d-flex">
+              <span class="inspires__img" style="background-image: url(assets/images/inspires/achievement.svg);"></span>
+              <div class="inspires__title">Our mission</div>
+              <p class="inspires__text text">
+                Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives.
+              </p>
+            </div>
+            <div class="inspires__box d-flex">
+              <span class="inspires__img" style="background-image: url(assets/images/inspires/love.svg);"></span>
+              <div class="inspires__title">What we believe in?</div>
+              <p class="inspires__text text">
+                Animals have the right to a pain-free and happy life. They have equal claim to the resources of this
+                planet, and deserve
+                a life of dignity and compassion.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="pets">
+
+        <div class="container">
+
+          <div class="pets__inner">
+
+            <div class="pets__title title">Pets in Zoo</div>
+
+            <div class="pets__slider slider">
+              <button class="pets__arrow pets__arrow--left arrow arrow--left"></button>
+              <ul class="slider__list slider__list--pets d-flex">
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/panda.png" alt="deer">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Panda’s name is Bei Bei. He
+                      is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/eagle.png" alt="panda">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Eagle is a hungry bird.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/gorilla.png"
+                    alt="monkeys">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Gorilla have a long hands.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/crocodile.png"
+                    alt="chimpanzee">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Crocodile is dangerous.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/cat.png" alt="cat">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Dogs are better.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/elephant.png"
+                    alt="elephant">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Elephant have long nose.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/fox.png" alt="fox">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Foxterriers are coming.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/sloth.png" alt="sloth">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Only in Alfa Romeo.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/panda.png" alt="deer">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Panda’s name is Bei Bei. He
+                      is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/eagle.png" alt="panda">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Eagle is a hungry bird.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/gorilla.png"
+                    alt="monkeys">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Gorilla have a long hands.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/crocodile.png"
+                    alt="chimpanzee">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Crocodile is dangerous.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/cat.png" alt="cat">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Dogs are better.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/elephant.png"
+                    alt="elephant">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Elephant have long nose.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/fox.png" alt="fox">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Foxterriers are coming.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/sloth.png" alt="sloth">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Only in Alfa Romeo.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/panda.png" alt="deer">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Panda’s name is Bei Bei. He
+                      is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/eagle.png" alt="panda">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Eagle is a hungry bird.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/gorilla.png"
+                    alt="monkeys">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Gorilla have a long hands.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/crocodile.png"
+                    alt="chimpanzee">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Crocodile is dangerous.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/cat.png" alt="cat">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Dogs are better.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/elephant.png"
+                    alt="elephant">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Elephant have long nose.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/fox.png" alt="fox">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Foxterriers are coming.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/sloth.png" alt="sloth">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Only in Alfa Romeo.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/panda.png" alt="deer">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Panda’s name is Bei Bei. He
+                      is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/eagle.png" alt="panda">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Eagle is a hungry bird.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/gorilla.png"
+                    alt="monkeys">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Gorilla have a long hands.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/crocodile.png"
+                    alt="chimpanzee">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Crocodile is dangerous.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/cat.png" alt="cat">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Dogs are better.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/elephant.png"
+                    alt="elephant">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Elephant have long nose.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/fox.png" alt="fox">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Foxterriers are coming.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+                <li class="slider__item slider__item--pets">
+                  <img class="slider__animal slider__animal--pets" src="assets/images/animals/sloth.png" alt="sloth">
+                  <div class="slider__mask slider__mask--pets d-flex">
+                    <p class="slider__text">Only in Alfa Romeo.</p>
+                    <a href="pages/map/map.html" class="slider__link slider__link--pets"><span
+                        class="slider__link-pic"></span>watch
+                      online</a>
+                    <button class="slider__btn" type="button"><span class="slider__btn-pic"></span>Donate</button>
+                  </div>
+                </li>
+              </ul>
+              <button class="pets__arrow pets__arrow--right arrow arrow--right"></button>
+            </div>
+
+            <div class="slider__range slider__range--pets range range--pets">
+              <div class="range__value range__value--pets">01/</div><span class="range__all range__all--pets">08</span>
+              <input class="range__slider range__slider--pets" type="range" min="0" max="7" value="0">
+            </div>
+
+            <a class="pets__link button" href="pages/map/map.html">Choose your favorite</a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="pay">
+
+        <div class="container container--narrow">
+
+          <div class="pay__inner d-flex">
+
+            <div class="pay__title title">Pay and feed</div>
+            <p class="pay__text text">The opportunity to easily and naturally (but as often as possible) donate to the
+              needs
+              of animals that you like.</p>
+
+          </div>
+
+        </div>
+
+        <div class="container">
+
+          <div class="pay__circles">
+
+            <div class="pay__circle">
+              <span class="pay__img" style="background-image: url(assets/images/pay/group.svg);"></span>
+              <p class="pay__subtext">You pay with a
+                VISA card</p>
+            </div>
+            <span class="pay__arrow"></span>
+            <div class="pay__circle">
+              <span class="pay__img" style="background-image: url(assets/images/pay/zoo.svg);"></span>
+              <p class="pay__subtext">Payment goes
+                to the Zoo</p>
+            </div>
+            <span class="pay__arrow"></span>
+            <div class="pay__circle">
+              <span class="pay__img" style="background-image: url(assets/images/pay/panda.svg);"></span>
+              <p class="pay__subtext">Panda gets
+                the bamboo</p>
+            </div>
+
+          </div>
+
+          <button class="pay__link button" type="button">donate</button>
+
+        </div>
+
+      </section>
+
+      <section class="testimonials">
+
+        <div class="container container--wide-shadow">
+
+          <div class="testimonials__inner d-flex">
+
+            <div class="testimonials__title title">Testimonials</div>
+
+            <div class="testimonials__slider slider">
+              <button class="testimonials__arrow testimonials__arrow--left arrow arrow--left"></button>
+              <ul class="testimonials__slider-list slider__list slider__list--testimonials d-flex">
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="assets/images/testimonials/client-3.jpg" alt="client-photo">
+                    <div class="slider__card-title">Nastya Sidorova</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="#" alt="client-photo">
+                    <div class="slider__card-title">Jack White</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="assets/images/testimonials/client-2.jpg" alt="client-photo">
+                    <div class="slider__card-title">Gandalf</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="assets/images/testimonials/client-4.jpg" alt="client-photo">
+                    <div class="slider__card-title">Noel Fielding</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="#" alt="client-photo">
+                    <div class="slider__card-title">Nikolay Drozdov</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="#" alt="client-photo">
+                    <div class="slider__card-title">Vlad Kim</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="#" alt="client-photo">
+                    <div class="slider__card-title">Corey Tailor</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+                <li class="slider__item slider__item--testimonials">
+                  <article class="slider__card">
+                    <img class="slider__user" src="#" alt="client-photo">
+                    <div class="slider__card-title">Rude Orhm</div>
+                    <p class="slider__card-descr">As a voice for wildlife, we are devastated by the impact of the 2020
+                      Australian bushfires on precious species and their
+                      habitat.</p>
+                  </article>
+                </li>
+              </ul>
+              <button class="testimonials__arrow testimonials__arrow--right arrow arrow--right"></button>
+            </div>
+
+            <div class="slider__range slider__range--testimonials range range--testimonials">
+              <div class="range__value range__value--testimonials">01/</div><span
+                class="range__all range__all--testimonials">08</span>
+              <input class="range__slider range__slider--testimonials" type="range" min="1" max="8" value="1">
+            </div>
+
+            <button class="testimonials__link button" type="button">Leave feedback</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="landing-map">
+
+        <div class="container">
+
+          <div class="landing-map__title title">Map</div>
+
+          <div class="landing-map__wrapper map">
+
+            <div class="map__inner">
+
+              <img class="map__inner-img" src="assets/images/map.svg" alt="world-map">
+
+              <button class="map__btn map__btn--eagle">
+                <a class="map__btn-link" href="#">
+                  <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="map__btn-svg"
+                      d="M33.682 0C15.4489 0 0.615723 14.835 0.615723 33.0703C0.615723 50.7103 30.8461 90.9006 32.1338 92.6047C32.4956 93.0911 33.0753 93.375 33.6822 93.375C34.2891 93.375 34.8688 93.0911 35.2305 92.6047C36.5181 90.9006 66.7487 50.7105 66.7487 33.0703C66.7483 14.835 51.9151 0 33.682 0ZM33.682 50.5781C24.0305 50.5781 16.1763 42.7229 16.1763 33.0703C16.1763 23.4176 24.0305 15.5624 33.682 15.5624C43.3335 15.5624 51.1877 23.4176 51.1877 33.0703C51.1877 42.7229 43.3335 50.5781 33.682 50.5781Z"
+                      fill="url(#paint0_linear)" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="-11.7325" y1="-4.90899e-07" x2="83.027" y2="20.3729"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5" />
+                        <stop offset="1" stop-color="#49D6DF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <img class="map__btn-img" src="assets/images/animals/eagle.png" alt="eagle">
+                  <div class="map__btn-descr descr">
+                    <img class="descr__pic" src="assets/images/animals/eagle.png" alt="eagle">
+                    <div class="descr__info">
+                      <span class="descr__title">West End Bald Eagle</span>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Region:</span>on an island near Los
+                        Angeles</p>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Population:</span>more than 270
+                        pairs in 2013</p>
+                    </div>
+                  </div>
+                </a>
+              </button>
+
+              <button class="map__btn map__btn--crocodile">
+                <a class="map__btn-link" href="#">
+                  <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M33.682 0C15.4489 0 0.615723 14.835 0.615723 33.0703C0.615723 50.7103 30.8461 90.9006 32.1338 92.6047C32.4956 93.0911 33.0753 93.375 33.6822 93.375C34.2891 93.375 34.8688 93.0911 35.2305 92.6047C36.5181 90.9006 66.7487 50.7105 66.7487 33.0703C66.7483 14.835 51.9151 0 33.682 0ZM33.682 50.5781C24.0305 50.5781 16.1763 42.7229 16.1763 33.0703C16.1763 23.4176 24.0305 15.5624 33.682 15.5624C43.3335 15.5624 51.1877 23.4176 51.1877 33.0703C51.1877 42.7229 43.3335 50.5781 33.682 50.5781Z"
+                      fill="url(#paint0_linear)" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="-11.7325" y1="-4.90899e-07" x2="83.027" y2="20.3729"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5" />
+                        <stop offset="1" stop-color="#49D6DF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <img class="map__btn-img" src="assets/images/animals/crocodile.png" alt="crocodile">
+                  <div class="map__btn-descr descr">
+                    <img class="descr__pic" src="assets/images/animals/crocodile.png" alt="crocodile">
+                    <div class="descr__info">
+                      <span class="descr__title">Dangerous Lizard</span>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Region:</span>what else to expect
+                        from Florida</p>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Population:</span>enough to make
+                        canned food</p>
+                    </div>
+                  </div>
+                </a>
+              </button>
+
+              <button class="map__btn map__btn--gorilla">
+                <a class="map__btn-link" href="#">
+                  <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M33.682 0C15.4489 0 0.615723 14.835 0.615723 33.0703C0.615723 50.7103 30.8461 90.9006 32.1338 92.6047C32.4956 93.0911 33.0753 93.375 33.6822 93.375C34.2891 93.375 34.8688 93.0911 35.2305 92.6047C36.5181 90.9006 66.7487 50.7105 66.7487 33.0703C66.7483 14.835 51.9151 0 33.682 0ZM33.682 50.5781C24.0305 50.5781 16.1763 42.7229 16.1763 33.0703C16.1763 23.4176 24.0305 15.5624 33.682 15.5624C43.3335 15.5624 51.1877 23.4176 51.1877 33.0703C51.1877 42.7229 43.3335 50.5781 33.682 50.5781Z"
+                      fill="url(#paint0_linear)" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="-11.7325" y1="-4.90899e-07" x2="83.027" y2="20.3729"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5" />
+                        <stop offset="1" stop-color="#49D6DF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <img class="map__btn-img" src="assets/images/animals/gorilla.png" alt="gorilla">
+                  <div class="map__btn-descr descr">
+                    <img class="descr__pic" src="assets/images/animals/gorilla.png" alt="gorilla">
+                    <div class="descr__info">
+                      <span class="descr__title">Big Monkey</span>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Region:</span>national park of
+                        Guinea</p>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Population:</span>enough to
+                        dominate</p>
+                    </div>
+                  </div>
+                </a>
+              </button>
+
+              <button class="map__btn map__btn--panda">
+                <a class="map__btn-link" href="#">
+                  <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M33.682 0C15.4489 0 0.615723 14.835 0.615723 33.0703C0.615723 50.7103 30.8461 90.9006 32.1338 92.6047C32.4956 93.0911 33.0753 93.375 33.6822 93.375C34.2891 93.375 34.8688 93.0911 35.2305 92.6047C36.5181 90.9006 66.7487 50.7105 66.7487 33.0703C66.7483 14.835 51.9151 0 33.682 0ZM33.682 50.5781C24.0305 50.5781 16.1763 42.7229 16.1763 33.0703C16.1763 23.4176 24.0305 15.5624 33.682 15.5624C43.3335 15.5624 51.1877 23.4176 51.1877 33.0703C51.1877 42.7229 43.3335 50.5781 33.682 50.5781Z"
+                      fill="url(#paint0_linear)" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="-11.7325" y1="-4.90899e-07" x2="83.027" y2="20.3729"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4BD8B5" />
+                        <stop offset="1" stop-color="#49D6DF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <img class="map__btn-img" src="assets/images/animals/panda.png" alt="panda">
+                  <div class="map__btn-descr descr">
+                    <img class="descr__pic" src="assets/images/animals/panda.png" alt="panda">
+                    <div class="descr__info">
+                      <span class="descr__title">Funny Panda</span>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Region:</span>bamboo forests in
+                        China</p>
+                      <p class="descr__subtitle"><span class="descr__subtitle--bold">Population:</span>on the verge of
+                        extinction</p>
+                    </div>
+                  </div>
+                </a>
+              </button>
+
+            </div>
+
+          </div>
+
+          <a class="landing-map__link button" href="pages/zoos/panda/panda.html"><span class="button__pic"></span>watch
+            online</a>
+
+        </div>
+
+      </section>
+
+      <footer class="footer" id="nav">
+
+        <div class="container container--wide">
+
+          <div class="footer__top">
+
+            <a class="footer__logo" href="index.html#">
+              <img src="assets/icons/logo-light.svg" alt="Logo">
+            </a>
+
+            <nav class="footer__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--footer">
+                  <a class="menu__link menu__link--footer menu__link--active" href="index.html#">About</a>
+                </li>
+                <li class="menu__item menu__item--footer">
+                  <a class="menu__link menu__link--footer" href="pages/zoos/panda/panda.html">Zoos</a>
+                </li>
+                <li class="menu__item menu__item--footer">
+                  <a class="menu__link menu__link--footer" href="pages/map/map.html">Map</a>
+                </li>
+                <li class="menu__item menu__item--footer">
+                  <a class="menu__link menu__link--footer"
+                    href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button class="footer__link button" type="button">donate for volunteers</button>
+
+            <div class="footer__contact">
+
+              <div class="footer__contact-title">Contact us</div>
+
+              <form class="footer__form form" action="#" method="get" enctype="multipart/form-data">
+
+                <input class="form__name form__input" placeholder="Name" tabindex="1" name="username" type="text"
+                  required>
+                <input class="form__mail form__input" placeholder="Email" tabindex="2" name="user-email" type="email"
+                  required>
+                <fieldset class="form__text">
+                  <legend class="form__text-title">Please enter your message</legend>
+                  <textarea class="form__textarea" tabindex="3" name="text" type="text" maxlength="280"
+                    required></textarea>
+                </fieldset>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" tabindex="4" type="checkbox" name="confirm" value="" required>
+                  <span class="form__checkbox-mask"></span>
+                  <span class="form__checkbox-text">I agree to the processing of Personal Data</span>
+                </label>
+                <button class="form__btn" tabindex="11" type="submit">send<span class="form__btn-arrow"></span></button>
+
+              </form>
+
+            </div>
+
+            <div class="footer__centre">
+              <div class="footer__centre-title">ZOO Online Centre</div>
+              <address class="footer__centre-address">
+                132, Address District, Street
+                <span class="footer__centre-shedule">Open Daily 10:00 am - 5:00 pm</span>
+              </address>
+              <a class="footer__phone footer__centre-contact" href="tel:7021633433">T(702)163-3433</a>
+              <a class="footer__email footer__centre-contact"
+                href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a>
+              <nav class="footer__social social">
+                <ul class="social__list social__list--footer d-flex">
+                  <li class="social__item social__item--footer">
+                    <a class="social__link social__link--instagram" href="https://www.instagram.com/" target="_blank">
+                      <img class="social__img" src="assets/icons/instagram.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li class="social__item social__item--footer">
+                    <a class="social__link social__link--twitter" href="https://twitter.com/" target="_blank">
+                      <img class="social__img" src="assets/icons/twitter.svg" alt="twitter">
+                    </a>
+                  </li>
+                  <li class="social__item social__item--footer">
+                    <a class="social__link social__link--youtube" href="https://www.youtube.com/" target="_blank">
+                      <img class="social__img" src="assets/icons/youtube.svg" alt="youtube">
+                    </a>
+                  </li>
+                  <li class="social__item social__item--footer">
+                    <a class="social__link social__link--vk" href="https://vk.com/" target="_blank">
+                      <img class="social__img" src="assets/icons/vk.svg" alt="vk">
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+
+          <div class="footer__bottom">
+            <span class="footer__line"></span>
+            <a class="footer__bottom-link footer__bottom-link--mockup" href="">©Noora Sagnayeva</a>
+            <a class="footer__bottom-link footer__bottom-link--task" href="">©RSSchool and ©Yem Digital - 2021</a>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

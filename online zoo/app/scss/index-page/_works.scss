@@ -1,0 +1,24 @@
+.works {
+  background-color: var(--color-bg-2);
+  margin: 0 auto;
+  padding: 100px 0;
+
+  &__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    align-self: flex-start;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+}

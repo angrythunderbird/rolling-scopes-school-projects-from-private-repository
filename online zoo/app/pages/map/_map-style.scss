@@ -1,0 +1,51 @@
+.world-map {
+  margin: 0 auto;
+  padding: 60px 0 94px;
+  text-align: center;
+  background-color: var(--color-bg-3);
+
+  &__wrapper {
+    margin-bottom: 46px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 auto 51px;
+    width: 790px;
+    text-align: left;
+    line-height: 17px;
+  }
+
+  &__slider {
+    display: block;
+    width: 1073px;
+    position: relative;
+    margin: 0 auto 30px;
+  }
+
+  &__arrow {
+    outline: transparent;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 5;
+
+    &--left {
+      left: -62px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--right {
+      right: -62px;
+      top: 50%;
+      transform: translateY(-50%) rotateY(180deg);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.social {
+
+  &__list {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: block;
+    margin-top: 15px;
+  }
+
+  &__item--footer {
+    margin: 0 15px 0 0;
+  }
+
+  &__link {
+    display: inline-block;
+
+    &:hover {
+      .social__img {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &__img {
+    width: 20px;
+    transition: transform 0.3s;
+  }
+
+}

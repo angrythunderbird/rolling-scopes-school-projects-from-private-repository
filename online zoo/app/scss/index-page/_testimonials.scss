@@ -1,0 +1,113 @@
+.testimonials {
+  background-color: var(--color-bg-2);
+
+  &__inner {
+    padding: 100px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 30px;
+    align-self: stretch;
+  }
+
+  &__slider-list {
+    overflow: hidden;
+  }
+
+  .slider__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 585px;
+    height: 310px;
+    background-color: var(--color-bg-3);
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+    border-radius: 5px;
+    padding: 47px 72px 0 73px;
+  }
+
+  .slider__user {
+    display: flex;
+    text-align: justify;
+    vertical-align: middle;
+    font-size: 10px;
+    position: relative;
+    margin-bottom: 17px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 1px solid #bdbdbd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      position: relative;
+      background-image: url(assets/icons/slider-user.svg);
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 48px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .slider__card-title {
+    margin-bottom: 17px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--color-text-title);
+  }
+
+  .slider__card-descr {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color: var(--color-text-text);
+  }
+
+  &__arrow {
+    outline: transparent;
+    border: none;
+    background-image: var(--arrow);
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 10;
+
+    &--left {
+      left: -37px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--right {
+      right: -32px;
+      top: 50%;
+      transform: translateY(-50%) rotateY(180deg);
+    }
+  }
+
+  &__link {
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

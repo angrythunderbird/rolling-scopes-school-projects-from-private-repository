@@ -1,0 +1,90 @@
+.hero {
+  background-image: url(assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__wrapper {
+    position: relative;
+    height: 940px;
+    padding: 206px 150px 111px;
+
+    overflow: hidden;
+  }
+
+  &__inner {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box {
+    display: inline-block;
+    flex: 1 0 auto;
+    margin: 0 0 auto 210px;
+    max-width: 800px;
+  }
+
+  &__title {
+    margin-bottom: 37px;
+    font-weight: 900;
+    font-size: 89px;
+    line-height: 104px;
+    color: $light-text;
+  }
+
+  &__social {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+
+  &__slider {
+    height: 420px;
+    position: absolute;
+    left: 975px;
+    bottom: 100px;
+
+    &::before {
+      height: 1px;
+      width: 200%;
+      content: "";
+      position: absolute;
+      top: 176px;
+      left: -135px;
+      display: block;
+      background-color: #fff;
+    }
+
+    .circle {
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background-image: url(assets/icons/circle.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 176px;
+      transform: translateY(-50%);
+    }
+
+    .circle--first {
+      left: -135px;
+    }
+
+    .circle--second {
+      left: 70px;
+    }
+
+    .circle--third {
+      left: 547px;
+    }
+
+    .circle--fourth {
+      left: 733px;
+    }
+  }
+
+  .slider__range--hero {
+    margin: 5px 0 0 185px;
+  }
+}

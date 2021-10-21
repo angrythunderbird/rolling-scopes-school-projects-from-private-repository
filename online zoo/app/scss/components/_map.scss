@@ -1,0 +1,142 @@
+.map {
+  max-width: 100%;
+  max-height: 100%;
+
+  &__inner {
+    position: relative;
+    width: 1200px;
+    height: 498px;
+  }
+
+  &__inner-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__btn {
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+
+    &--eagle {
+      top: 14.86%;
+      left: 10.1%;
+    }
+
+    &--crocodile {
+      top: 20.48%;
+      left: 20.35%;
+    }
+
+    &--gorilla {
+      top: 38.15%;
+      left: 47.67%
+    }
+
+    &--panda {
+      top: 18.27%;
+      right: 20.08%;
+    }
+  }
+
+  &__btn-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      .map__btn-descr {
+        opacity: 1;
+      }
+
+      path {
+        fill: #EB5757;
+      }
+    }
+  }
+
+  &__btn-link--active {
+    .map__btn-descr {
+      opacity: 1;
+    }
+
+    path {
+      fill: #EB5757;
+    }
+  }
+
+  &__btn-img {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__btn-descr {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 436px;
+    height: 149px;
+    padding: 0 44px;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    background-color: var(--color-bg-2);
+    transition: all 0.2s;
+  }
+
+  .descr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    pointer-events: none;
+
+    &__pic {
+      display: inline-block;
+      margin-right: 20px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    &__title {
+      margin-bottom: 7px;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 21px;
+      color: var(--color-text-title);
+      text-transform: capitalize;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--color-text-text);
+      margin-top: 5px;
+
+      &--bold {
+        margin-right: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-text-text);
+      }
+    }
+  }
+}

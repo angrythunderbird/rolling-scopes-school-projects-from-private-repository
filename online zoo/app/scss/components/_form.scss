@@ -1,0 +1,126 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__input {
+    margin-bottom: 23px;
+    width: 383px;
+    height: 26px;
+    background-color: $dark-main;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 14px;
+    line-height: 16px;
+    color: #e0e0e0;
+    outline: none;
+  }
+
+  &__mail {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    display: block;
+    width: 383px;
+    height: 124px;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+  }
+
+  &__text-title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #bdbdbd;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: $dark-main;
+    color: $light-text;
+  }
+
+  &__checkbox-label {
+    width: 245px;
+    margin: 20px 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox-mask {
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+    border: 1px solid #bdbdbd;
+    border-radius: 1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: #bdbdbd;
+      opacity: 0;
+      transition: 0.2s;
+    }
+  }
+
+  &__checkbox:checked+.form__checkbox-mask::before {
+    opacity: 1;
+  }
+
+  &__checkbox-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #bdbdbd;
+  }
+
+  &__btn {
+    margin-left: 275px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 108px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 0 3px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $light-text;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $dark-text;
+    }
+  }
+
+  &__btn-arrow {
+    display: inline-block;
+    width: 48px;
+    height: 100%;
+    background-image: url(assets/icons/arrow-btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
